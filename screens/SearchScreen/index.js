@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { View, Text, ScrollView } from "react-native";
 import React, { useLayoutEffect } from "react";
 import SearchBooks from "./SearchBooks";
 import FilterBooks from "./FilterBooks";
@@ -11,11 +11,11 @@ const SearchScreen = ({ navigation }) => {
     });
   }, []);
   return (
-    <View>
+    <ScrollView>
       <Header title="Search" bgColor="white" textColor="black" />
       <SearchBooks />
       <FilterBooks />
-    </View>
+    </ScrollView>
   );
 };
 

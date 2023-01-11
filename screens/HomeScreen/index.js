@@ -1,7 +1,9 @@
-import { View, Text } from "react-native";
+import { View, Text, ScrollView } from "react-native";
 import React, { useLayoutEffect } from "react";
 import Header from "../../components/Header";
-import LatestBooks from "./Body/LatestBooks";
+import Trending from "./Body/TrendingBooks";
+import Latest from "./Body/LatestBooks";
+import Discover from "./Body/DiscoverBooks";
 
 const HomeScreen = ({ navigation }) => {
   useLayoutEffect(() => {
@@ -10,10 +12,14 @@ const HomeScreen = ({ navigation }) => {
     });
   }, []);
   return (
-    <View>
+    <ScrollView>
       <Header title="E-book" />
-      <LatestBooks />
-    </View>
+      <View className="ml-4">
+        <Latest />
+        <Trending />
+        <Discover />
+      </View>
+    </ScrollView>
   );
 };
 

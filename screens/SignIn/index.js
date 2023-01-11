@@ -1,4 +1,4 @@
-import { View, Text, Button } from "react-native";
+import { View, Button } from "react-native";
 import React, { useLayoutEffect } from "react";
 import Header from "../../components/Header";
 import InputField from "./inputField";
@@ -22,7 +22,7 @@ const SignIn = ({ navigation }) => {
         <Button
           className="bg-blue-300 h-12 w-1/3 rounded-md justify-center items-center"
           title="Sign In"
-          onPress={() => navigation.navigate("SearchScreen")}
+          onPress={() => navigation.navigate("Home")}
         />
       </View>
     </View>
