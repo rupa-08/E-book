@@ -1,9 +1,10 @@
 import { View, Text } from "react-native";
 import React, { useLayoutEffect } from "react";
+import SearchBooks from "./SearchBooks";
+import FilterBooks from "./FilterBooks";
 import Header from "../../components/Header";
-import LatestBooks from "./Body/LatestBooks";
 
-const HomeScreen = ({ navigation }) => {
+const SearchScreen = ({ navigation }) => {
   useLayoutEffect(() => {
     navigation.setOptions({
       headerShown: false,
@@ -11,10 +12,11 @@ const HomeScreen = ({ navigation }) => {
   }, []);
   return (
     <View>
-      <Header title="E-book" />
-      <LatestBooks />
+      <Header title="Search" bgColor="white" textColor="black" />
+      <SearchBooks />
+      <FilterBooks />
     </View>
   );
 };
 
-export default HomeScreen;
+export default SearchScreen;

@@ -1,7 +1,6 @@
 import { View, Text, Button } from "react-native";
-import React, { useNavigation, useLayoutEffect } from "react";
+import React, { useLayoutEffect } from "react";
 import Header from "../../components/Header";
-// import Button from "../../components/button";
 import InputField from "./inputField";
 
 const SignIn = ({ navigation }) => {
@@ -12,14 +11,18 @@ const SignIn = ({ navigation }) => {
   }, []);
   return (
     <View>
-      <Header title="Sign In" />
+      <Header
+        title="Sign In"
+        icon="arrow-back"
+        iconType="material"
+        style={{ color: "black" }}
+      />
       <View className="items-center justify-center">
         <InputField />
-        {/* <Button buttonText="Sign In" link="Home" /> */}
         <Button
           className="bg-blue-300 h-12 w-1/3 rounded-md justify-center items-center"
-          title="Sign Up"
-          onPress={() => navigation.navigate("Home")}
+          title="Sign In"
+          onPress={() => navigation.navigate("SearchScreen")}
         />
       </View>
     </View>

@@ -12,7 +12,12 @@ const SignUp = ({ navigation }) => {
   }, []);
   return (
     <View>
-      <Header title="Sign Up" />
+      <Header
+        title="Sign Up"
+        icon="arrow-back"
+        iconType="material"
+        style={{ color: "black" }}
+      />
       <View className="items-center justify-center">
         <InputField />
 

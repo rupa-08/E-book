@@ -1,13 +1,21 @@
 import { View, Text } from "react-native";
 import React from "react";
-import Button from "./button";
+import { Icon } from "react-native-elements";
 
-const Header = ({ title, icon }) => {
+const Header = ({ style, title, icon, iconType, bgColor, textColor }) => {
   return (
     <View>
-      <View className="bg-blue-300 h-20 pt-4">
-        {/* <Icon /> */}
-        <Text className="text-white font-semibold text-lg mt-4 pl-6">
+      <View
+        className="h-20 pt-4 pl-5 flex-row items-center"
+        style={{ backgroundColor: bgColor }}
+      >
+        <View>
+          <Icon iconStyle={style} name={icon} type={iconType} />
+        </View>
+        <Text
+          className="text-white font-semibold text-lg pl-3"
+          style={{ color: textColor }}
+        >
           {title}
         </Text>
       </View>
