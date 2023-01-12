@@ -18,7 +18,8 @@ const BottomTabs = ({ navigation }) => {
   return (
     <BottomTabsNavigator.Navigator
       screenOptions={{
-        activeTintColor: "orange",
+        tabBarActiveTintColor: "#5567d0",
+        tabBarInactiveTintColor: "#181818",
       }}
     >
       <BottomTabsNavigator.Screen
