@@ -1,4 +1,4 @@
-import { View, Text, ScrollView } from "react-native";
+import { View, Button, ScrollView } from "react-native";
 import React, { useLayoutEffect } from "react";
 import Header from "../../components/Header";
 import Trending from "./Body/TrendingBooks";

@@ -57,7 +57,7 @@ const FilterBooks = () => {
         <FlatList
           data={booksGenreList}
           numColumns={2}
-          vertical
+          // vertical
           keyExtractor={(item, index) => index.toString()}
           renderItem={({ item }) => <BooksGenre genres={item} />}
         ></FlatList>

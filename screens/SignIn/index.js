@@ -22,7 +22,7 @@ const SignIn = ({ navigation }) => {
         <Button
           className="bg-blue-300 h-12 w-1/3 rounded-md justify-center items-center"
           title="Sign In"
-          onPress={() => navigation.navigate("Home")}
+          onPress={() => navigation.navigate("BottomTabs")}
         />
       </View>
     </View>
