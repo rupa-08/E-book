@@ -1,11 +1,11 @@
-import { View, Text } from "react-native";
-import React, { useLayoutEffect } from "react";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Icon } from "react-native-elements";
-import HomeScreen from "../../screens/HomeScreen";
-import SearchScreen from "../../screens/SearchScreen";
-import LibraryScreen from "../../screens/LibraryScreen";
-import ProfileScreen from "../../screens/ProfileScreen";
+import { View, Text } from 'react-native';
+import React, { useLayoutEffect } from 'react';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { Icon } from 'react-native-elements';
+import HomeScreen from '../../screens/HomeScreen';
+import SearchScreen from '../../screens/SearchScreen';
+import LibraryScreen from '../../screens/LibraryScreen';
+import ProfileScreen from '../../screens/ProfileScreen';
 
 const BottomTabsNavigator = createBottomTabNavigator();
 
@@ -18,49 +18,49 @@ const BottomTabs = ({ navigation }) => {
   return (
     <BottomTabsNavigator.Navigator
       screenOptions={{
-        tabBarActiveTintColor: "#5567d0",
-        tabBarInactiveTintColor: "#181818",
+        tabBarActiveTintColor: '#966fd6',
+        tabBarInactiveTintColor: '#181818',
       }}
     >
       <BottomTabsNavigator.Screen
-        name="HomeScreen"
+        name='HomeScreen'
         component={HomeScreen}
         options={{
-          tabBarLabel: "",
+          tabBarLabel: '',
           tabBarIcon: ({ color, size }) => (
-            <Icon name="home" type="material" color={color} size={size} />
+            <Icon name='home' type='material' color={color} size={size} />
           ),
         }}
       />
       <BottomTabsNavigator.Screen
-        name="SearchScreen"
+        name='SearchScreen'
         component={SearchScreen}
         options={{
-          tabBarLabel: "",
+          tabBarLabel: '',
           tabBarIcon: ({ color, size }) => (
-            <Icon name="search" type="material" color={color} size={size} />
+            <Icon name='search' type='material' color={color} size={size} />
           ),
         }}
       />
       <BottomTabsNavigator.Screen
-        name="LibraryScreen"
+        name='LibraryScreen'
         component={LibraryScreen}
         options={{
-          tabBarLabel: "",
+          tabBarLabel: '',
           tabBarIcon: ({ color, size }) => (
-            <Icon name="book" type="material" color={color} size={size} />
+            <Icon name='book' type='material' color={color} size={size} />
           ),
         }}
       />
       <BottomTabsNavigator.Screen
-        name="ProfileScreen"
+        name='ProfileScreen'
         component={ProfileScreen}
         options={{
-          tabBarLabel: "",
+          tabBarLabel: '',
           tabBarIcon: ({ color, size }) => (
             <Icon
-              name="person-outline"
-              type="material"
+              name='person-outline'
+              type='material'
               color={color}
               size={size}
             />

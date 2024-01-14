@@ -1,9 +1,10 @@
-import { View, Button, ScrollView } from "react-native";
-import React, { useLayoutEffect } from "react";
-import Header from "../../components/Header";
-import Trending from "./Body/TrendingBooks";
-import Latest from "./Body/LatestBooks";
-import Discover from "./Body/DiscoverBooks";
+import React, { useLayoutEffect } from 'react';
+import { View, ScrollView } from 'react-native';
+
+import Header from '../../components/Header';
+import Trending from './Body/TrendingBooks';
+import Latest from './Body/LatestBooks';
+import Discover from './Body/DiscoverBooks';
 
 const HomeScreen = ({ navigation }) => {
   useLayoutEffect(() => {
@@ -12,14 +13,20 @@ const HomeScreen = ({ navigation }) => {
     });
   }, []);
   return (
-    <ScrollView>
-      <Header title="E-book" />
-      <View className="ml-4">
+    <View>
+      <Header
+        title='E-BOOK'
+        icon='menu'
+        iconType='material'
+        isLogin={true}
+        style={{ color: '#966fd6' }}
+      />
+      <ScrollView className='mt-5'>
         <Latest />
         <Trending />
         <Discover />
-      </View>
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 };
 
